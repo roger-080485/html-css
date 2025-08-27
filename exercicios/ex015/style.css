@@ -1,0 +1,15 @@
+ body{
+            background-color:lightgoldenrodyellow;
+            font-family: arial;
+            font-size: 20px;
+        }
+        h1{
+            color: mediumblue;
+            background-color:goldenrod;
+        }
+        h2{
+            color: darkred;
+        }
+        p{
+            text-align: justify;
+        }

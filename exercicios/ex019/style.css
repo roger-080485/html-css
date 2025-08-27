@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'metal';
+    src: url('/fonts/Metal Lord.otf') format(opentype);
+}
+
+body{
+    background-color: #f0dc7b;
+}/*Seletor do tipo id*/
+#principal{
+    font-family: 'metal';
+    text-align: center;
+    color: #ffff;
+    background-color: #e65d5d;
+}
+/*Seletor do tipo de class*/
+.subtitulo{
+     font-family: 'metal';
+    background-color: #da9644;
+}
+.conteudo{
+     font-family: 'metal';
+    background-color: #36ad80;
+}

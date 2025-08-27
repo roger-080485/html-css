@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Dinamica</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <!--Imagem Média-->
+        <source media="(max-width:750px )" srcset="imagens/imgp.png.png" type="image/png">
+         <!--Imagem Grande-->
+        <source media="(max-width:1050px )" srcset="imagens/imgm.png.png" type="image/png">
+          <!--Imagem Pequena por Padrão-->
+        <img src="imagens/imgg.png.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos Aprender a reproduzir áudio em HTML5</p>
+   <audio preload="metadata" controls>
+
+        <source src="midia/From Whence We Came - Dan _Lebo_ Lebowitz, Tone Seeker.mp3 " type="audio/mpeg">
+
+        <source src="midia/Monthaholic - Schwartzy.ogg" type="audio/ogg">
+
+        <source src="midia/Monthaholic - Schwartzy.mp3" type="audio/wav">
+
+     <p>Infelizmente seu navegador não consegue reproduzir áudio <a href="midia/happy-mistake.mp3">Clique aqui para baixar o arquivo.</a></p>
+   </audio>
+   <a href="midia/Monthaholic - Schwartzy.mp3">Clique aqui para baixar o arquivo.</a>
+</body>
+</html>
