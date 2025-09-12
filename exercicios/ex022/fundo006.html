@@ -7,11 +7,17 @@
     <style>
         body{
             height: 100vh;
-            background-image: url('imagens/wallpaper002.jpg');
+            /*background-image: url('imagens/wallpaper002.jpg');
             background-repeat: no-repeat;
             background-position: center center;
-            background-size:cover;
+            background-size:cover;*/
+            /*Shorthand - background sequência:
+            color > image > position > [size] > attachment;
+            obs: a declaração de [size] não funcionava até a data da aula*/
 
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat 
+            fixed;
+            background-size:cover;
         }
         main{
             border:1px solid darkblue;
