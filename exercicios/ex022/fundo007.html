@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container{
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            /*A área do conteiner se altera de acordo com o tamanho da tela*/
+            position: relative;
+            background-color: purple;
+            padding: 10px;
+            /*Cobrindo 96% da tela com a conteudo da section*/
+            height: 96vh;
+            
+
+        }
+        #conteudo{
+            background-image: url("imagens/target001.png");
+            /*Colocando a imagem de fundo o alvo cobrindo 100% da div semântica 'article'*/
+            background-size: 100% 100%;
+            
+            /*A div não se altera em relação ao conteúdo */
+            position: absolute;
+            height: 200px;
+            width: 400px;
+
+            /*As propriedade abaixo só podem ser configuradas por que a posição do article é absoluto*/
+            left: 50%;
+            top: 50%;
+
+            background-color: yellow;
+            /*Transladando o conteudo 'article' onde os valores  + ou - mudam a posição da caixa na viewport*/
+            transform: translate(-50%,-50%);
+           
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        
+        <article id="conteudo">
+
+        </article>
+    
+    </section>
+    
+</body>
+</html>
