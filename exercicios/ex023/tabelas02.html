@@ -6,7 +6,12 @@
     <title>Criando tabelas grandes</title>
     <style>
         table{
+            margin: auto;
+            position: relative;
             border-collapse: collapse;
+             font-family: Arial, Helvetica, sans-serif;
+             font-size:0.9em;
+
         }
         caption{
             font-family: Arial, Helvetica, sans-serif;
@@ -18,11 +23,18 @@
         }
         .cabecalho{
             border: 1px solid black;
-            background-color: grey;
+            background-color: rgb(68, 67, 67);
+            color: white;
             font-weight: bold;
             font-size: larger;
             font-variant: uppercase;
             text-align: center;
+
+            position: sticky;
+            top: -1px;
+            background-color: rgb(68, 67, 67);
+        
+           
             
         }
         td{
@@ -34,12 +46,17 @@
             text-align: right;
             
         }
+        table tr:nth-child(even){
+            background-color: lightgrey;
+        }
+
         td.nome{
             text-align: left;
         }
         tfoot{
             border: 1px solid black;
-            background-color: grey;
+            background-color: rgb(68, 67, 67);
+            color: white;
             font-weight: bold;
             font-size: larger;
             font-variant: uppercase;
@@ -50,154 +67,152 @@
 <body>
     <table>
         <caption>Lista de unidades federativas do Brasil</caption>
-        <thead>
+        <thead scope="col">
             <td class="cabecalho"> Estado</td>
-            <td class="cabecalho">população</td>
-            <td class="cabecalho">% porcentagem do total</td>
+            <td class="cabecalho">População</td>
+            <td class="cabecalho">% Porcentagem do total</td>
         </thead>
-        <tr>
+        <tr scope="row">
             <td class="nome">São Paulo</td>
             <td>46 081 801</td>
             <td>21,59%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome"> Minas Gerais</td>
             <td>21 393 441</td>
             <td>10,02%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Rio de Janeiro</td>
             <td>417 223 547</td>
             <td>8,07%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Bahia</td>
             <td>14 870 907</td>
             <td>6,97%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Paraná</td>
             <td>11 890 517</td>
             <td>5,57%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Rio Grande do Sul</td>
             <td>11 233 263</td>
             <td>5,26%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome"> Pernambuco</td>
             <td>9 562 007</td>
             <td>4,48%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Ceará</td>
             <td>9 268 836</td>
             <td>4,34%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome"> Pará</td>
             <td>8 711 196</td>
             <td>4,08%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome"> Santa Catarina</td>
             <td>8 187 029</td>
             <td>3,84%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Goiás</td>
             <td>7 423 629</td>
             <td>3,48%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Maranhão</td>
             <td> 7018 211</td>
             <td>3,29%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome"> Amazonas</td>
             <td>4 321 616</td>
             <td>2,02%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Paraíba</td>
             <td>4 164 468</td>
             <td>1,95%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome"> Espírito Santo</td>
             <td>46 081 801</td>
             <td>21,59%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome"> Mato Grosso</td>
             <td>3 893 659</td>
             <td>1,82%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Rio Grande do Norte</td>
             <td>3455236</td>
             <td>1,62%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Piauí</td>
             <td>3 384 547</td>
             <td>1,59%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Alagoas</td>
             <td>3 220 848</td>
             <td>1,51%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Distrito Federal</td>
             <td>2 996 899</td>
             <td>1,40%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Mato Grosso do Sul</td>
             <td>2 924 631</td>
             <td>1,37%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Sergipe</td>
             <td>2 299 425</td>
             <td>1,08%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome"> Rondônia</td>
             <td>1 751 950</td>
             <td>0,82%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome"> Tocantins</td>
             <td>1 586 859</td>
             <td>0,74%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome"> Acre</td>
             <td>884 372</td>
             <td>0,41%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Amapá</td>
             <td>806 517</td>
             <td>0,38%</td>
         </tr>
-        <tr>
+        <tr scope="row">
             <td class="nome">Roraima </td>
             <td>738 772</td>
             <td>0,35%</td>
         </tr>
-        <tfoot>
-            <th>total da população</th>
-            <td></td>
-            <td></td>
+        <tfoot scope="row">
+            <th>Total da população</th>
+            <td>213 421 037	</td>
+            <td>100%</td>
         </tfoot>
-
-        
-    </table>
+</table>
     
 </body>
 </html>
