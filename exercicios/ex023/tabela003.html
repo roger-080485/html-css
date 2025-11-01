@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Células</title>
+    <Style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            width: 100px;
+            text-align: center;
+            padding: 10px;
+            
+        }
+    </Style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <tr>
+            <!--  "COLSPAN": Atributo que adicionado a tag de dados da tabela faz com que a célula se expanda para mais de uma "coluna" de acordo com o valor adicionado ao parâmetro-->
+            <td colspan="3">B</td>
+            
+        </tr>
+         <tr>
+            <td>D</td>
+            <td>E</td>
+             <!--  "ROWSPAN": Atributo que adicionado a tag de dados da tabela faz com que a célula se expanda para mais de uma "linha" de acordo com o valor adicionado ao parâmetro-->
+            <td rowspan="3">F</td>
+        </tr>
+         <tr>
+            <td>G</td>
+            <td>H</td>
+            
+        </tr>
+         <tr>
+            <td>J</td>
+            <td>L</td>
+            
+        </tr>
+    </table>
+    
+</body>
+</html>
