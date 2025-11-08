@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabela</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            margin: auto;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size:1.3em;
+            padding: 10px;
+            background-color: gray;
+            vertical-align: middle;
+            color: white;
+            font-weight: bolder;
+        }
+        td,th{
+            border: 1px solid black;
+            padding:10px;
+            font-weight: bold;
+        }
+        .Cnome{
+            background-color: lightgreen;
+
+        }
+        .Cidade{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+    <table>
+        <!--Tag que seleciona toda uma coluna-->
+        <colgroup>
+            <col class="Cnome" >
+            <col class="Csexo">
+            <col class="Cidade">
+            <col class="Cprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>João Pedro</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Carla Souza</td>
+            <td>F</td>
+            <td>28</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Lucas Lima</td>
+            <td>M</td>
+            <td>35</td>
+            <td>Professor</td>
+        </tr>   
+        <tr>
+            <td>Mariana Alves</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Designer</td>   
+        </tr>       
+        <tr>    
+            <td>Rafael Costa</td>
+            <td>M</td>
+            <td>27</td>
+            <td>Advogado</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
