@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, tempore sequi? A voluptates aliquam ut voluptate, totam saepe, odio aut dolor voluptatem esse accusamus soluta, molestiae vitae impedit asperiores  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde esse placeat ex ab illum corporis vitae, minus ducimus possimus? Odio commodi nihil, aliquid amet sequi cum cupiditate animi enim corrupti.</p>
+
+    <ul>
+        <!--Links que carregam páginas internas contidas no arquivo-->
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quo eligendi veritatis temporibus atque! Perferendis nesciunt reprehenderit officiis voluptate dignissimos inventore itaque magni, quaerat adipisci architecto reiciendis, in consectetur pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa atque rem laborum exercitationem ipsam illo neque placeat. Necessitatibus, molestias ut? Quod assumenda praesentium minima cumque molestias impedit mollitia, blanditiis amet.</p>
+
+    <!--Propriedade "name que faz a ligação entre os links na lista ao Iframe"-->
+    <iframe id="tela" name="frame" src="">
+        <p>Infelizmente seu navegador não é compatível com isso</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est veniam incidunt corrupti assumenda delectus! Optio pariatur deleniti laboriosam architecto recusandae sit voluptates nulla quam excepturi harum officia perferendis, amet assumenda? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum similique minus saepe aspernatur libero suscipit reiciendis et aperiam assumenda ab incidunt, ratione beatae rerum facilis odio doloribus exercitationem quasi quos.</p>
+    
+</body>
+</html>
