@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+        }
+        h1{
+            text-align: center;
+        }
+        legend{
+            text-align: center;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        fieldset#esportes{
+            width: 40vw;
+            position:relative;
+           align-items:center;
+            padding-bottom: 20px;
+
+
+        }
+        fieldset#sexo{
+            width: 40vw;
+            position:relative;
+           align-items:center;
+            padding-bottom: 20px;
+
+        }
+        input{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset id="sexo">
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="ismax" value="M"><label for="ismax">Masculino</label> <br>
+
+            <input type="radio" name="sexo" id="isfem" value="F" checked><label for="isfem">Feminino</label > <br>
+
+            <input type="radio" name="sexo" id="isnot" value="N"><label for="isnot" >Prefiro não declarar</label>
+
+        </fieldset>
+        <fieldset id="esportes">
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esvol" id="iesvol"><label for="iesvol">Vôlei</label> <br>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label>
+
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    
+</body>
+</html>
