@@ -6,64 +6,39 @@
     <title>Testando meu primeiro formulário</title>
     <style>
         *{
-            margin: 0px;
-            padding: 0px;
-        }
-        body{
-            background-color: aquamarine;
-        }
-        section#login{
-            background-color: white;
-            top:50%;
-            left:50%;
-            transform: translate(-50%,-50%);
-            position: absolute;
-            text-align: center;
-            box-shadow: 1px 1px 8px 1px  rgba(0, 0, 0, 0.425);
-            border-radius: 25px;
-            padding: 140px;
-        }
-        p{
-            padding-bottom: 30px;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 30px;
         }
-        input#usuario{
-             font-size: 20px;
-            display: block;
-            width:30vw;
-            height:50px;
-            margin:5px;
-            padding-bottom: 10px;
-        }
-        input#senha{
-            font-size: 20px;
-            display: block;
-            margin:5px;
-            width:30vw;
-            height:50px;
-        }
-        ::placeholder{
+        h1{
             text-align: center;
         }
-        input#botao{
-            font-size: 30px;
-            width: 30vw;
-            height: 5vh;
-
+          input{
+            margin: 5px;
+            height: 30px;
+            
+        
         }
     </style>
+    
 </head>
 <body>
-    <section id="login">
-        <form action="cadastro.php" method="post" autocomplete="off">
-            <p><label for="usuario">Usuario:</label> <input type="text" name="usuario" id="usuario"placeholder  ="Informe seu Usuario"></p>
+    <main>
+        <section>
+             <h1>Cadastro de Currículo</h1>
+            <form action="cadastro.php" method="get" autocomplete="on">
+               <fieldset id="pessoais">
+                 <legend>Dados Pessoais</legend>
+                    <label for="inome">Nome Completo: <input type="text" name="nome" id="inome" minlength="15" maxlength="30" size="50"><label> <br>
+                    <label for="iend">Endereço: <input type="text" name="end" id="iend" minlength="15" maxlength="50" size="50" autocomplete="address-level3" required style="padding-left: 50px;"></label> <br>
+                    <label for="itel">Celular/Whatsapp: <input type="tel" name="tel" id="itel" autocomplete="tel" required></label> <br>
+                    <label for="iemail">e-mail: <input type="email" name="email" id="iemail" required></label>
+                </fieldset>
+                <fieldset id="escolaridade"><legend>Escolaridade</legend></fieldset>
+                <label for="igrau">Grau de Formação <input type="text" minlength="15" maxlength="30"size="50"></label>
+                <fieldset id="experiencia"><legend>Experiência Profissional</legend></fieldset>
+            </form>
 
-            <p><label for="senha">Senha:</label> <input type="password" name="senha" id="senha" placeholder="Digite a sua senha"></p>
-            <input type="submit" value="Acessar" id="botao">
-
-
-        </form>
-    </section>
+        </section>
+    </main>
+   
 </body>
 </html>

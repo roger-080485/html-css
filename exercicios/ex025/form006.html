@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.ph" autocomplete="on" method="post">
+
+        <!--Carregando um seletor de cores em HTML-->
+        <fieldset>
+            <legend style="text-align: center;">Seletores Novos</legend>
+            <p><label for="icor">Cor: <input type="color" name="Cor" id="icor" value="#00ff00"></label> <br></p>
+
+            <!--Carregando um seletor de alcançe em HTML "Range"-->
+            <p><label for="ipesquisa">Pesquisa de Satisfação: <input type="range"  name="pesquisa" id="ipesquisa" value="2" min="1" max="5"></label></p>
+
+            <!--Carregando um imagem no aquivo HTML-->
+            <label for="ifoto">Foto do Perfil: <input type="file" name="foto" id="ifoto"></label>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+
+
+    </form>
+    
+</body>
+</html>
